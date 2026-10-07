@@ -2,6 +2,6 @@ name: Update Dependency Latest Versions
 
 on:
   schedule:
-    - cron: '0 8 * * *' # every day at 8 AM
+    - cron: '0 14 * * 1-4' # every Monday to Thursday at 8 AM MDT
 
 jobs:

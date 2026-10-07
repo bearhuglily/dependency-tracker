@@ -12,8 +12,11 @@ github_actions:
   - jdx/mise-action
 
 helm_charts:
-  - argo-cd
-  - external-secrets
+  - name: argo-cd
+    repository: https://argoproj.github.io/argo-helm
+
+  - name: external-secrets
+    repository: https://charts.external-secrets.io
 
 terraform_providers:
   - hashicorp/google
