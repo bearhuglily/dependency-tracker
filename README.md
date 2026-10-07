@@ -3,8 +3,6 @@ Track the latest versions of github actions, helm charts, terraform providers, a
 
 <!-- dependency-tracker:start -->
 
-_Last checked: 2026-10-07 21:11 UTC_
-
 ## GitHub Actions
 
 | Dependency | Major | Latest | Released |
