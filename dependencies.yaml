@@ -1,11 +1,14 @@
 github_actions:
   - actions/checkout
-  - actions/cache
   - actions/upload-artifact
   - actions/download-artifact
   - actions/setup-node
   - actions/setup-python
   - actions/setup-go
+  - actions/cache
+  - actions/configure-pages
+  - actions/upload-pages-artifact
+  - actions/deploy-pages
   - google-github-actions/auth
   - google-github-actions/setup-gcloud
   - tailscale/github-action
