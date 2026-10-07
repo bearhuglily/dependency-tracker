@@ -1,0 +1,7 @@
+name: Update Dependency Latest Versions
+
+on:
+  schedule:
+    - cron: '0 8 * * *' # every day at 8 AM
+
+jobs:

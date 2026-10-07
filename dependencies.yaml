@@ -1,0 +1,21 @@
+github_actions:
+  - actions/checkout
+  - actions/cache
+  - actions/upload-artifact
+  - actions/download-artifact
+  - actions/setup-node
+  - actions/setup-python
+  - actions/setup-go
+  - google-github-actions/auth
+  - google-github-actions/setup-gcloud
+  - tailscale/github-action
+  - jdx/mise-action
+
+helm_charts:
+  - argo-cd
+  - external-secrets
+
+terraform_providers:
+  - hashicorp/google
+  - hashicorp/kubernetes
+  - grafana/grafana
