@@ -1,21 +1,24 @@
 #!/usr/bin/env python3
 
 from __future__ import annotations
+from datetime import datetime, timezone
+from pathlib import Path
 
+import html
 import json
 import os
 import re
 import sys
 import urllib.error
 import urllib.request
-from datetime import datetime, timezone
-from pathlib import Path
-
 import yaml
 
 ROOT = Path(__file__).resolve().parent.parent
 CONFIG_PATH = ROOT / "dependencies.yaml"
 README_PATH = ROOT / "README.md"
+
+SITE_DIR = ROOT / "site"
+SITE_PATH = SITE_DIR / "index.html"
 
 START_MARKER = "<!-- dependency-tracker:start -->"
 END_MARKER = "<!-- dependency-tracker:end -->"
@@ -248,8 +251,7 @@ def safe_fetch(label: str, function, item):
             "url": "#",
         }
 
-
-def build_dashboard(config: dict) -> str:
+def fetch_dependencies(config: dict):
     github_actions = [
         safe_fetch(action, get_github_action, action)
         for action in config.get("github_actions", [])
@@ -265,6 +267,13 @@ def build_dashboard(config: dict) -> str:
         for provider in config.get("terraform_providers", [])
     ]
 
+    return github_actions, helm_charts, terraform_providers
+
+def build_dashboard(
+    github_actions,
+    helm_charts,
+    terraform_providers,
+) -> str:
     sections = [
         START_MARKER,
         "",
@@ -307,15 +316,311 @@ def update_readme(dashboard: str) -> None:
 
     README_PATH.write_text(updated)
 
+def html_table(rows: list[dict[str, str]]) -> str:
+    table_rows = []
+
+    for row in rows:
+        name = html.escape(row["name"])
+        major = html.escape(row["major"])
+        latest = html.escape(row["latest"])
+        released = html.escape(row["released"])
+        url = html.escape(row["url"], quote=True)
+
+        table_rows.append(
+            f"""
+            <tr>
+                <td>
+                    <a href="{url}" target="_blank" rel="noopener noreferrer">
+                        {name}
+                    </a>
+                </td>
+                <td><span class="major">{major}</span></td>
+                <td>
+                    <a href="{url}" target="_blank" rel="noopener noreferrer">
+                        {latest}
+                    </a>
+                </td>
+                <td>{released}</td>
+            </tr>
+            """
+        )
+
+    return "\n".join(table_rows)
+
+
+def build_site(
+    github_actions: list[dict[str, str]],
+    helm_charts: list[dict[str, str]],
+    terraform_providers: list[dict[str, str]],
+) -> str:
+    return f"""<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dependency Tracker</title>
+
+    <style>
+        :root {{
+            color-scheme: light dark;
+            font-family:
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                sans-serif;
+        }}
+
+        body {{
+            margin: 0;
+            background: #0d1117;
+            color: #e6edf3;
+        }}
+
+        main {{
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 48px 24px 80px;
+        }}
+
+        header {{
+            margin-bottom: 48px;
+        }}
+
+        h1 {{
+            margin-bottom: 8px;
+            font-size: 2.4rem;
+        }}
+
+        header p {{
+            margin: 0;
+            color: #8b949e;
+            font-size: 1.05rem;
+        }}
+
+        section {{
+            margin-top: 42px;
+        }}
+
+        h2 {{
+            margin-bottom: 16px;
+            font-size: 1.4rem;
+        }}
+
+        .table-wrapper {{
+            overflow-x: auto;
+            border: 1px solid #30363d;
+            border-radius: 8px;
+        }}
+
+        table {{
+            width: 100%;
+            border-collapse: collapse;
+            background: #161b22;
+        }}
+
+        th,
+        td {{
+            padding: 12px 16px;
+            text-align: left;
+            border-bottom: 1px solid #30363d;
+        }}
+
+        th {{
+            color: #8b949e;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+        }}
+
+        tbody tr:last-child td {{
+            border-bottom: 0;
+        }}
+
+        tbody tr:hover {{
+            background: #1c2128;
+        }}
+
+        a {{
+            color: #58a6ff;
+            text-decoration: none;
+        }}
+
+        a:hover {{
+            text-decoration: underline;
+        }}
+
+        .major {{
+            display: inline-block;
+            padding: 3px 8px;
+            border: 1px solid #3fb950;
+            border-radius: 999px;
+            color: #3fb950;
+            font-weight: 600;
+        }}
+
+        footer {{
+            margin-top: 48px;
+            color: #8b949e;
+            font-size: 0.85rem;
+        }}
+
+        @media (prefers-color-scheme: light) {{
+            body {{
+                background: #ffffff;
+                color: #1f2328;
+            }}
+
+            table {{
+                background: #ffffff;
+            }}
+
+            .table-wrapper,
+            th,
+            td {{
+                border-color: #d0d7de;
+            }}
+
+            tbody tr:hover {{
+                background: #f6f8fa;
+            }}
+
+            header p,
+            th,
+            footer {{
+                color: #656d76;
+            }}
+
+            a {{
+                color: #0969da;
+            }}
+
+            .major {{
+                color: #1a7f37;
+                border-color: #1a7f37;
+            }}
+        }}
+    </style>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>Dependency Tracker</h1>
+            <p>
+                Latest versions of the GitHub Actions, Helm charts,
+                and Terraform providers I care about.
+            </p>
+        </header>
+
+        <section>
+            <h2>GitHub Actions</h2>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Dependency</th>
+                            <th>Major</th>
+                            <th>Latest</th>
+                            <th>Released</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {html_table(github_actions)}
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section>
+            <h2>Helm Charts</h2>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Dependency</th>
+                            <th>Major</th>
+                            <th>Latest</th>
+                            <th>Released</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {html_table(helm_charts)}
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section>
+            <h2>Terraform Providers</h2>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Dependency</th>
+                            <th>Major</th>
+                            <th>Latest</th>
+                            <th>Released</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {html_table(terraform_providers)}
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <footer>
+            Generated automatically from dependencies.yaml.
+        </footer>
+    </main>
+</body>
+</html>
+"""
+
+
+def write_site(
+    github_actions: list[dict[str, str]],
+    helm_charts: list[dict[str, str]],
+    terraform_providers: list[dict[str, str]],
+) -> None:
+    SITE_DIR.mkdir(parents=True, exist_ok=True)
+
+    site = build_site(
+        github_actions,
+        helm_charts,
+        terraform_providers,
+    )
+
+    SITE_PATH.write_text(site)
 
 def main() -> None:
     config = yaml.safe_load(CONFIG_PATH.read_text())
 
-    dashboard = build_dashboard(config)
+    (
+        github_actions,
+        helm_charts,
+        terraform_providers,
+    ) = fetch_dependencies(config)
+
+    dashboard = build_dashboard(
+        github_actions,
+        helm_charts,
+        terraform_providers,
+    )
+
     update_readme(dashboard)
 
-    print(f"Updated {README_PATH}")
+    write_site(
+        github_actions,
+        helm_charts,
+        terraform_providers,
+    )
 
+    print(f"Updated {README_PATH}")
+    print(f"Updated {SITE_PATH}")
 
 if __name__ == "__main__":
     main()
