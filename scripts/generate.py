@@ -265,12 +265,8 @@ def build_dashboard(config: dict) -> str:
         for provider in config.get("terraform_providers", [])
     ]
 
-    now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
-
     sections = [
         START_MARKER,
-        "",
-        f"_Last checked: {now}_",
         "",
         "## GitHub Actions",
         "",
