@@ -6,13 +6,20 @@ github_actions:
   - actions/setup-python
   - actions/setup-go
   - actions/cache
+  - actions/github-script
   - actions/configure-pages
   - actions/upload-pages-artifact
   - actions/deploy-pages
+  - azure/setup-helm
+  - docker/build-push-action
+  - docker/login-action
+  - docker/setup-buildx-action
   - google-github-actions/auth
   - google-github-actions/setup-gcloud
-  - tailscale/github-action
+  - hashicorp/setup-terraform
   - jdx/mise-action
+  - slackapi/slack-github-action
+  - tailscale/github-action
 
 helm_charts:
   - name: argo-cd
