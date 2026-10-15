@@ -33,7 +33,7 @@ Track the latest versions of github actions, helm charts, terraform providers, a
 
 | Dependency | Major | Latest | Released |
 |---|---:|---:|---:|
-| [argo-cd](https://argoproj.github.io/argo-helm) | **10** | [10.10.3](https://argoproj.github.io/argo-helm) | 2026-10-12 |
+| [argo-cd](https://argoproj.github.io/argo-helm) | **10** | [10.10.5](https://argoproj.github.io/argo-helm) | 2026-10-15 |
 | [external-secrets](https://charts.external-secrets.io) | **2** | [2.12.0](https://charts.external-secrets.io) | 2026-10-06 |
 
 ## Terraform Providers
