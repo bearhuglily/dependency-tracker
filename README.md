@@ -25,7 +25,7 @@ Track the latest versions of github actions, helm charts, terraform providers, a
 | [google-github-actions/auth](https://github.com/google-github-actions/auth/releases/tag/v3) | **v3** | [v3](https://github.com/google-github-actions/auth/releases/tag/v3) | 2025-09-03 |
 | [google-github-actions/setup-gcloud](https://github.com/google-github-actions/setup-gcloud/releases/tag/v3.0.1) | **v3** | [v3.0.1](https://github.com/google-github-actions/setup-gcloud/releases/tag/v3.0.1) | 2025-08-28 |
 | [hashicorp/setup-terraform](https://github.com/hashicorp/setup-terraform/releases/tag/v4.0.1) | **v4** | [v4.0.1](https://github.com/hashicorp/setup-terraform/releases/tag/v4.0.1) | 2026-05-12 |
-| [jdx/mise-action](https://github.com/jdx/mise-action/releases/tag/v5.1.2) | **v5** | [v5.1.2](https://github.com/jdx/mise-action/releases/tag/v5.1.2) | 2026-10-12 |
+| [jdx/mise-action](https://github.com/jdx/mise-action/releases/tag/v5.2.1) | **v5** | [v5.2.1](https://github.com/jdx/mise-action/releases/tag/v5.2.1) | 2026-10-19 |
 | [slackapi/slack-github-action](https://github.com/slackapi/slack-github-action/releases/tag/v4.0.0) | **v4** | [v4.0.0](https://github.com/slackapi/slack-github-action/releases/tag/v4.0.0) | 2026-07-15 |
 | [tailscale/github-action](https://github.com/tailscale/github-action/releases/tag/v4.2.0) | **v4** | [v4.2.0](https://github.com/tailscale/github-action/releases/tag/v4.2.0) | 2026-09-22 |
 
@@ -34,14 +34,14 @@ Track the latest versions of github actions, helm charts, terraform providers, a
 | Dependency | Major | Latest | Released |
 |---|---:|---:|---:|
 | [argo-cd](https://argoproj.github.io/argo-helm) | **10** | [10.10.5](https://argoproj.github.io/argo-helm) | 2026-10-15 |
-| [external-secrets](https://charts.external-secrets.io) | **2** | [2.12.0](https://charts.external-secrets.io) | 2026-10-06 |
+| [external-secrets](https://charts.external-secrets.io) | **2** | [2.13.0](https://charts.external-secrets.io) | 2026-10-16 |
 
 ## Terraform Providers
 
 | Dependency | Major | Latest | Released |
 |---|---:|---:|---:|
 | [hashicorp/google](https://registry.terraform.io/providers/hashicorp/google/latest) | **8** | [8.7.0](https://registry.terraform.io/providers/hashicorp/google/latest) | — |
-| [hashicorp/kubernetes](https://registry.terraform.io/providers/hashicorp/kubernetes/latest) | **3** | [3.3.0](https://registry.terraform.io/providers/hashicorp/kubernetes/latest) | — |
+| [hashicorp/kubernetes](https://registry.terraform.io/providers/hashicorp/kubernetes/latest) | **3** | [3.4.0](https://registry.terraform.io/providers/hashicorp/kubernetes/latest) | — |
 | [grafana/grafana](https://registry.terraform.io/providers/grafana/grafana/latest) | **4** | [4.50.0](https://registry.terraform.io/providers/grafana/grafana/latest) | — |
 
 <!-- dependency-tracker:end -->
