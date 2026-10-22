@@ -11,7 +11,7 @@ Track the latest versions of github actions, helm charts, terraform providers, a
 | [actions/upload-artifact](https://github.com/actions/upload-artifact/releases/tag/v7.0.2) | **v7** | [v7.0.2](https://github.com/actions/upload-artifact/releases/tag/v7.0.2) | 2026-10-07 |
 | [actions/download-artifact](https://github.com/actions/download-artifact/releases/tag/v8.0.2) | **v8** | [v8.0.2](https://github.com/actions/download-artifact/releases/tag/v8.0.2) | 2026-10-07 |
 | [actions/setup-node](https://github.com/actions/setup-node/releases/tag/v7.1.0) | **v7** | [v7.1.0](https://github.com/actions/setup-node/releases/tag/v7.1.0) | 2026-10-08 |
-| [actions/setup-python](https://github.com/actions/setup-python/releases/tag/v7.0.0) | **v7** | [v7.0.0](https://github.com/actions/setup-python/releases/tag/v7.0.0) | 2026-07-20 |
+| [actions/setup-python](https://github.com/actions/setup-python/releases/tag/v7.1.0) | **v7** | [v7.1.0](https://github.com/actions/setup-python/releases/tag/v7.1.0) | 2026-10-22 |
 | [actions/setup-go](https://github.com/actions/setup-go/releases/tag/v7.0.0) | **v7** | [v7.0.0](https://github.com/actions/setup-go/releases/tag/v7.0.0) | 2026-07-16 |
 | [actions/cache](https://github.com/actions/cache/releases/tag/v6.1.0) | **v6** | [v6.1.0](https://github.com/actions/cache/releases/tag/v6.1.0) | 2026-06-26 |
 | [actions/github-script](https://github.com/actions/github-script/releases/tag/v9.0.0) | **v9** | [v9.0.0](https://github.com/actions/github-script/releases/tag/v9.0.0) | 2026-04-09 |
@@ -27,7 +27,7 @@ Track the latest versions of github actions, helm charts, terraform providers, a
 | [hashicorp/setup-terraform](https://github.com/hashicorp/setup-terraform/releases/tag/v4.0.1) | **v4** | [v4.0.1](https://github.com/hashicorp/setup-terraform/releases/tag/v4.0.1) | 2026-05-12 |
 | [jdx/mise-action](https://github.com/jdx/mise-action/releases/tag/v5.2.2) | **v5** | [v5.2.2](https://github.com/jdx/mise-action/releases/tag/v5.2.2) | 2026-10-21 |
 | [slackapi/slack-github-action](https://github.com/slackapi/slack-github-action/releases/tag/v4.0.0) | **v4** | [v4.0.0](https://github.com/slackapi/slack-github-action/releases/tag/v4.0.0) | 2026-07-15 |
-| [tailscale/github-action](https://github.com/tailscale/github-action/releases/tag/v4.2.0) | **v4** | [v4.2.0](https://github.com/tailscale/github-action/releases/tag/v4.2.0) | 2026-09-22 |
+| [tailscale/github-action](https://github.com/tailscale/github-action/releases/tag/v4.3.0) | **v4** | [v4.3.0](https://github.com/tailscale/github-action/releases/tag/v4.3.0) | 2026-10-22 |
 
 ## Helm Charts
 
@@ -40,7 +40,7 @@ Track the latest versions of github actions, helm charts, terraform providers, a
 
 | Dependency | Major | Latest | Released |
 |---|---:|---:|---:|
-| [hashicorp/google](https://registry.terraform.io/providers/hashicorp/google/latest) | **8** | [8.7.0](https://registry.terraform.io/providers/hashicorp/google/latest) | — |
+| [hashicorp/google](https://registry.terraform.io/providers/hashicorp/google/latest) | **8** | [8.8.0](https://registry.terraform.io/providers/hashicorp/google/latest) | — |
 | [hashicorp/kubernetes](https://registry.terraform.io/providers/hashicorp/kubernetes/latest) | **3** | [3.4.0](https://registry.terraform.io/providers/hashicorp/kubernetes/latest) | — |
 | [grafana/grafana](https://registry.terraform.io/providers/grafana/grafana/latest) | **4** | [4.50.0](https://registry.terraform.io/providers/grafana/grafana/latest) | — |
 
