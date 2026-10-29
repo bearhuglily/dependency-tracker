@@ -27,7 +27,7 @@ Track the latest versions of github actions, helm charts, terraform providers, a
 | [hashicorp/setup-terraform](https://github.com/hashicorp/setup-terraform/releases/tag/v4.0.1) | **v4** | [v4.0.1](https://github.com/hashicorp/setup-terraform/releases/tag/v4.0.1) | 2026-05-12 |
 | [jdx/mise-action](https://github.com/jdx/mise-action/releases/tag/v5.2.4) | **v5** | [v5.2.4](https://github.com/jdx/mise-action/releases/tag/v5.2.4) | 2026-10-27 |
 | [slackapi/slack-github-action](https://github.com/slackapi/slack-github-action/releases/tag/v4.0.0) | **v4** | [v4.0.0](https://github.com/slackapi/slack-github-action/releases/tag/v4.0.0) | 2026-07-15 |
-| [tailscale/github-action](https://github.com/tailscale/github-action/releases/tag/v4.3.0) | **v4** | [v4.3.0](https://github.com/tailscale/github-action/releases/tag/v4.3.0) | 2026-10-22 |
+| [tailscale/github-action](https://github.com/tailscale/github-action/releases/tag/v4.4.0) | **v4** | [v4.4.0](https://github.com/tailscale/github-action/releases/tag/v4.4.0) | 2026-10-29 |
 
 ## Helm Charts
 
@@ -42,6 +42,6 @@ Track the latest versions of github actions, helm charts, terraform providers, a
 |---|---:|---:|---:|
 | [hashicorp/google](https://registry.terraform.io/providers/hashicorp/google/latest) | **8** | [8.9.0](https://registry.terraform.io/providers/hashicorp/google/latest) | — |
 | [hashicorp/kubernetes](https://registry.terraform.io/providers/hashicorp/kubernetes/latest) | **3** | [3.4.0](https://registry.terraform.io/providers/hashicorp/kubernetes/latest) | — |
-| [grafana/grafana](https://registry.terraform.io/providers/grafana/grafana/latest) | **4** | [4.52.0](https://registry.terraform.io/providers/grafana/grafana/latest) | — |
+| [grafana/grafana](https://registry.terraform.io/providers/grafana/grafana/latest) | **4** | [4.53.0](https://registry.terraform.io/providers/grafana/grafana/latest) | — |
 
 <!-- dependency-tracker:end -->
