@@ -33,14 +33,14 @@ Track the latest versions of github actions, helm charts, terraform providers, a
 
 | Dependency | Major | Latest | Released |
 |---|---:|---:|---:|
-| [argo-cd](https://argoproj.github.io/argo-helm) | **10** | [10.11.6](https://argoproj.github.io/argo-helm) | 2026-10-26 |
+| [argo-cd](https://argoproj.github.io/argo-helm) | **10** | [10.11.7](https://argoproj.github.io/argo-helm) | 2026-11-03 |
 | [external-secrets](https://charts.external-secrets.io) | **2** | [2.14.0](https://charts.external-secrets.io) | 2026-10-23 |
 
 ## Terraform Providers
 
 | Dependency | Major | Latest | Released |
 |---|---:|---:|---:|
-| [hashicorp/google](https://registry.terraform.io/providers/hashicorp/google/latest) | **8** | [8.9.0](https://registry.terraform.io/providers/hashicorp/google/latest) | — |
+| [hashicorp/google](https://registry.terraform.io/providers/hashicorp/google/latest) | **8** | [8.10.0](https://registry.terraform.io/providers/hashicorp/google/latest) | — |
 | [hashicorp/kubernetes](https://registry.terraform.io/providers/hashicorp/kubernetes/latest) | **3** | [3.4.0](https://registry.terraform.io/providers/hashicorp/kubernetes/latest) | — |
 | [grafana/grafana](https://registry.terraform.io/providers/grafana/grafana/latest) | **4** | [4.53.0](https://registry.terraform.io/providers/grafana/grafana/latest) | — |
 
