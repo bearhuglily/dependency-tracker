@@ -20,7 +20,7 @@ Track the latest versions of github actions, helm charts, terraform providers, a
 | [actions/deploy-pages](https://github.com/actions/deploy-pages/releases/tag/v5.0.1) | **v5** | [v5.0.1](https://github.com/actions/deploy-pages/releases/tag/v5.0.1) | 2026-09-01 |
 | [azure/setup-helm](https://github.com/Azure/setup-helm/releases/tag/v5.0.1) | **v5** | [v5.0.1](https://github.com/Azure/setup-helm/releases/tag/v5.0.1) | 2026-06-23 |
 | [docker/build-push-action](https://github.com/docker/build-push-action/releases/tag/v7.4.0) | **v7** | [v7.4.0](https://github.com/docker/build-push-action/releases/tag/v7.4.0) | 2026-09-15 |
-| [docker/login-action](https://github.com/docker/login-action/releases/tag/v4.7.0) | **v4** | [v4.7.0](https://github.com/docker/login-action/releases/tag/v4.7.0) | 2026-10-23 |
+| [docker/login-action](https://github.com/docker/login-action/releases/tag/v4.8.0) | **v4** | [v4.8.0](https://github.com/docker/login-action/releases/tag/v4.8.0) | 2026-11-05 |
 | [docker/setup-buildx-action](https://github.com/docker/setup-buildx-action/releases/tag/v4.4.1) | **v4** | [v4.4.1](https://github.com/docker/setup-buildx-action/releases/tag/v4.4.1) | 2026-09-16 |
 | [google-github-actions/auth](https://github.com/google-github-actions/auth/releases/tag/v3) | **v3** | [v3](https://github.com/google-github-actions/auth/releases/tag/v3) | 2025-09-03 |
 | [google-github-actions/setup-gcloud](https://github.com/google-github-actions/setup-gcloud/releases/tag/v3.0.1) | **v3** | [v3.0.1](https://github.com/google-github-actions/setup-gcloud/releases/tag/v3.0.1) | 2025-08-28 |
@@ -33,7 +33,7 @@ Track the latest versions of github actions, helm charts, terraform providers, a
 
 | Dependency | Major | Latest | Released |
 |---|---:|---:|---:|
-| [argo-cd](https://argoproj.github.io/argo-helm) | **10** | [10.12.1](https://argoproj.github.io/argo-helm) | 2026-11-04 |
+| [argo-cd](https://argoproj.github.io/argo-helm) | **10** | [10.14.0](https://argoproj.github.io/argo-helm) | 2026-11-05 |
 | [external-secrets](https://charts.external-secrets.io) | **2** | [2.14.0](https://charts.external-secrets.io) | 2026-10-23 |
 
 ## Terraform Providers
@@ -41,7 +41,7 @@ Track the latest versions of github actions, helm charts, terraform providers, a
 | Dependency | Major | Latest | Released |
 |---|---:|---:|---:|
 | [hashicorp/google](https://registry.terraform.io/providers/hashicorp/google/latest) | **8** | [8.10.0](https://registry.terraform.io/providers/hashicorp/google/latest) | — |
-| [hashicorp/kubernetes](https://registry.terraform.io/providers/hashicorp/kubernetes/latest) | **3** | [3.4.0](https://registry.terraform.io/providers/hashicorp/kubernetes/latest) | — |
+| [hashicorp/kubernetes](https://registry.terraform.io/providers/hashicorp/kubernetes/latest) | **3** | [3.5.0](https://registry.terraform.io/providers/hashicorp/kubernetes/latest) | — |
 | [grafana/grafana](https://registry.terraform.io/providers/grafana/grafana/latest) | **4** | [4.53.0](https://registry.terraform.io/providers/grafana/grafana/latest) | — |
 
 <!-- dependency-tracker:end -->
