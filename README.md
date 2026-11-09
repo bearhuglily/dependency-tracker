@@ -18,14 +18,14 @@ Track the latest versions of github actions, helm charts, terraform providers, a
 | [actions/configure-pages](https://github.com/actions/configure-pages/releases/tag/v6.0.0) | **v6** | [v6.0.0](https://github.com/actions/configure-pages/releases/tag/v6.0.0) | 2026-03-25 |
 | [actions/upload-pages-artifact](https://github.com/actions/upload-pages-artifact/releases/tag/v5.0.0) | **v5** | [v5.0.0](https://github.com/actions/upload-pages-artifact/releases/tag/v5.0.0) | 2026-04-10 |
 | [actions/deploy-pages](https://github.com/actions/deploy-pages/releases/tag/v5.0.1) | **v5** | [v5.0.1](https://github.com/actions/deploy-pages/releases/tag/v5.0.1) | 2026-09-01 |
-| [azure/setup-helm](https://github.com/Azure/setup-helm/releases/tag/v5.0.1) | **v5** | [v5.0.1](https://github.com/Azure/setup-helm/releases/tag/v5.0.1) | 2026-06-23 |
+| [azure/setup-helm](https://github.com/Azure/setup-helm/releases/tag/v5.1.0) | **v5** | [v5.1.0](https://github.com/Azure/setup-helm/releases/tag/v5.1.0) | 2026-11-09 |
 | [docker/build-push-action](https://github.com/docker/build-push-action/releases/tag/v7.4.0) | **v7** | [v7.4.0](https://github.com/docker/build-push-action/releases/tag/v7.4.0) | 2026-09-15 |
 | [docker/login-action](https://github.com/docker/login-action/releases/tag/v4.8.0) | **v4** | [v4.8.0](https://github.com/docker/login-action/releases/tag/v4.8.0) | 2026-11-05 |
 | [docker/setup-buildx-action](https://github.com/docker/setup-buildx-action/releases/tag/v4.4.1) | **v4** | [v4.4.1](https://github.com/docker/setup-buildx-action/releases/tag/v4.4.1) | 2026-09-16 |
 | [google-github-actions/auth](https://github.com/google-github-actions/auth/releases/tag/v3) | **v3** | [v3](https://github.com/google-github-actions/auth/releases/tag/v3) | 2025-09-03 |
 | [google-github-actions/setup-gcloud](https://github.com/google-github-actions/setup-gcloud/releases/tag/v3.0.1) | **v3** | [v3.0.1](https://github.com/google-github-actions/setup-gcloud/releases/tag/v3.0.1) | 2025-08-28 |
 | [hashicorp/setup-terraform](https://github.com/hashicorp/setup-terraform/releases/tag/v4.0.1) | **v4** | [v4.0.1](https://github.com/hashicorp/setup-terraform/releases/tag/v4.0.1) | 2026-05-12 |
-| [jdx/mise-action](https://github.com/jdx/mise-action/releases/tag/v5.2.6) | **v5** | [v5.2.6](https://github.com/jdx/mise-action/releases/tag/v5.2.6) | 2026-11-02 |
+| [jdx/mise-action](https://github.com/jdx/mise-action/releases/tag/v5.2.7) | **v5** | [v5.2.7](https://github.com/jdx/mise-action/releases/tag/v5.2.7) | 2026-11-06 |
 | [slackapi/slack-github-action](https://github.com/slackapi/slack-github-action/releases/tag/v4.0.0) | **v4** | [v4.0.0](https://github.com/slackapi/slack-github-action/releases/tag/v4.0.0) | 2026-07-15 |
 | [tailscale/github-action](https://github.com/tailscale/github-action/releases/tag/v4.4.0) | **v4** | [v4.4.0](https://github.com/tailscale/github-action/releases/tag/v4.4.0) | 2026-10-29 |
 
@@ -33,7 +33,7 @@ Track the latest versions of github actions, helm charts, terraform providers, a
 
 | Dependency | Major | Latest | Released |
 |---|---:|---:|---:|
-| [argo-cd](https://argoproj.github.io/argo-helm) | **10** | [10.14.0](https://argoproj.github.io/argo-helm) | 2026-11-05 |
+| [argo-cd](https://argoproj.github.io/argo-helm) | **10** | [10.17.1](https://argoproj.github.io/argo-helm) | 2026-11-09 |
 | [external-secrets](https://charts.external-secrets.io) | **2** | [2.14.0](https://charts.external-secrets.io) | 2026-10-23 |
 
 ## Terraform Providers
@@ -42,6 +42,6 @@ Track the latest versions of github actions, helm charts, terraform providers, a
 |---|---:|---:|---:|
 | [hashicorp/google](https://registry.terraform.io/providers/hashicorp/google/latest) | **8** | [8.10.0](https://registry.terraform.io/providers/hashicorp/google/latest) | — |
 | [hashicorp/kubernetes](https://registry.terraform.io/providers/hashicorp/kubernetes/latest) | **3** | [3.5.0](https://registry.terraform.io/providers/hashicorp/kubernetes/latest) | — |
-| [grafana/grafana](https://registry.terraform.io/providers/grafana/grafana/latest) | **4** | [4.53.0](https://registry.terraform.io/providers/grafana/grafana/latest) | — |
+| [grafana/grafana](https://registry.terraform.io/providers/grafana/grafana/latest) | **4** | [4.54.0](https://registry.terraform.io/providers/grafana/grafana/latest) | — |
 
 <!-- dependency-tracker:end -->
