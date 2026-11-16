@@ -25,7 +25,7 @@ Track the latest versions of github actions, helm charts, terraform providers, a
 | [google-github-actions/auth](https://github.com/google-github-actions/auth/releases/tag/v3) | **v3** | [v3](https://github.com/google-github-actions/auth/releases/tag/v3) | 2025-09-03 |
 | [google-github-actions/setup-gcloud](https://github.com/google-github-actions/setup-gcloud/releases/tag/v3.0.1) | **v3** | [v3.0.1](https://github.com/google-github-actions/setup-gcloud/releases/tag/v3.0.1) | 2025-08-28 |
 | [hashicorp/setup-terraform](https://github.com/hashicorp/setup-terraform/releases/tag/v4.0.1) | **v4** | [v4.0.1](https://github.com/hashicorp/setup-terraform/releases/tag/v4.0.1) | 2026-05-12 |
-| [jdx/mise-action](https://github.com/jdx/mise-action/releases/tag/v5.2.8) | **v5** | [v5.2.8](https://github.com/jdx/mise-action/releases/tag/v5.2.8) | 2026-11-12 |
+| [jdx/mise-action](https://github.com/jdx/mise-action/releases/tag/v5.2.9) | **v5** | [v5.2.9](https://github.com/jdx/mise-action/releases/tag/v5.2.9) | 2026-11-15 |
 | [slackapi/slack-github-action](https://github.com/slackapi/slack-github-action/releases/tag/v4.0.0) | **v4** | [v4.0.0](https://github.com/slackapi/slack-github-action/releases/tag/v4.0.0) | 2026-07-15 |
 | [tailscale/github-action](https://github.com/tailscale/github-action/releases/tag/v4.4.0) | **v4** | [v4.4.0](https://github.com/tailscale/github-action/releases/tag/v4.4.0) | 2026-10-29 |
 
@@ -42,6 +42,6 @@ Track the latest versions of github actions, helm charts, terraform providers, a
 |---|---:|---:|---:|
 | [hashicorp/google](https://registry.terraform.io/providers/hashicorp/google/latest) | **8** | [8.11.0](https://registry.terraform.io/providers/hashicorp/google/latest) | — |
 | [hashicorp/kubernetes](https://registry.terraform.io/providers/hashicorp/kubernetes/latest) | **3** | [3.5.0](https://registry.terraform.io/providers/hashicorp/kubernetes/latest) | — |
-| [grafana/grafana](https://registry.terraform.io/providers/grafana/grafana/latest) | **4** | [4.54.0](https://registry.terraform.io/providers/grafana/grafana/latest) | — |
+| [grafana/grafana](https://registry.terraform.io/providers/grafana/grafana/latest) | **4** | [4.55.0](https://registry.terraform.io/providers/grafana/grafana/latest) | — |
 
 <!-- dependency-tracker:end -->
