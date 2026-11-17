@@ -5,21 +5,38 @@ github_actions:
   - actions/setup-node
   - actions/setup-python
   - actions/setup-go
+  - actions/attest
   - actions/cache
   - actions/github-script
   - actions/configure-pages
   - actions/upload-pages-artifact
   - actions/deploy-pages
+  - actions/create-github-app-token
   - azure/setup-helm
   - docker/build-push-action
   - docker/login-action
   - docker/setup-buildx-action
   - google-github-actions/auth
   - google-github-actions/setup-gcloud
+  - googleapis/release-please-action
   - hashicorp/setup-terraform
   - jdx/mise-action
+  - jdx/aube-action
   - slackapi/slack-github-action
   - tailscale/github-action
+  - erlef/setup-beam
+  - bufbuild/buf-setup-action
+  - bufbuild/buf-action
+  - astral-sh/setup-uv
+  - aquasecurity/setup-trivy
+  - mcr.microsoft.com/playwright
+  - anthropics/claude-code-action
+  - devhub-tools/coverbot-action
+  - devhub-tools/querydesk-setup-action
+  - devhub-tools/querydesk-remove-action
+  - oven-sh/setup-bun
+  - arduino/setup-task
+  - sigstore/cosign-installer
 
 helm_charts:
   - name: argo-cd

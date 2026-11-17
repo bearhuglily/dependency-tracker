@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron: '0 14 * * 1-4' # every Monday to Thursday at 8 AM MDT
+    - cron: '0 0 * * 0-4' # every Sunday to Thursday whenever it wants to
 
 permissions:
   contents: write
