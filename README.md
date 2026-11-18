@@ -57,7 +57,7 @@ Track the latest versions of github actions, helm charts, terraform providers, a
 
 | Dependency | Major | Latest | Released |
 |---|---:|---:|---:|
-| [hashicorp/google](https://registry.terraform.io/providers/hashicorp/google/latest) | **8** | [8.11.0](https://registry.terraform.io/providers/hashicorp/google/latest) | — |
+| [hashicorp/google](https://registry.terraform.io/providers/hashicorp/google/latest) | **8** | [8.12.0](https://registry.terraform.io/providers/hashicorp/google/latest) | — |
 | [hashicorp/kubernetes](https://registry.terraform.io/providers/hashicorp/kubernetes/latest) | **3** | [3.5.0](https://registry.terraform.io/providers/hashicorp/kubernetes/latest) | — |
 | [grafana/grafana](https://registry.terraform.io/providers/grafana/grafana/latest) | **4** | [4.55.0](https://registry.terraform.io/providers/grafana/grafana/latest) | — |
 
