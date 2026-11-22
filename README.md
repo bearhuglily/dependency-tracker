@@ -28,14 +28,14 @@ Track the latest versions of github actions, helm charts, terraform providers, a
 | [google-github-actions/setup-gcloud](https://github.com/google-github-actions/setup-gcloud/releases/tag/v3.0.1) | **v3** | [v3.0.1](https://github.com/google-github-actions/setup-gcloud/releases/tag/v3.0.1) | 2025-08-28 |
 | [googleapis/release-please-action](https://github.com/googleapis/release-please-action/releases/tag/v5.0.0) | **v5** | [v5.0.0](https://github.com/googleapis/release-please-action/releases/tag/v5.0.0) | 2026-04-22 |
 | [hashicorp/setup-terraform](https://github.com/hashicorp/setup-terraform/releases/tag/v4.0.1) | **v4** | [v4.0.1](https://github.com/hashicorp/setup-terraform/releases/tag/v4.0.1) | 2026-05-12 |
-| [jdx/mise-action](https://github.com/jdx/mise-action/releases/tag/v5.2.10) | **v5** | [v5.2.10](https://github.com/jdx/mise-action/releases/tag/v5.2.10) | 2026-11-18 |
+| [jdx/mise-action](https://github.com/jdx/mise-action/releases/tag/v5.3.0) | **v5** | [v5.3.0](https://github.com/jdx/mise-action/releases/tag/v5.3.0) | 2026-11-21 |
 | [jdx/aube-action](https://github.com/jdx/aube-action/releases/tag/v1.1.2) | **v1** | [v1.1.2](https://github.com/jdx/aube-action/releases/tag/v1.1.2) | 2026-11-06 |
-| [slackapi/slack-github-action](https://github.com/slackapi/slack-github-action/releases/tag/v4.0.0) | **v4** | [v4.0.0](https://github.com/slackapi/slack-github-action/releases/tag/v4.0.0) | 2026-07-15 |
+| [slackapi/slack-github-action](https://github.com/slackapi/slack-github-action/releases/tag/v4.1.0) | **v4** | [v4.1.0](https://github.com/slackapi/slack-github-action/releases/tag/v4.1.0) | 2026-11-20 |
 | [tailscale/github-action](https://github.com/tailscale/github-action/releases/tag/v4.4.0) | **v4** | [v4.4.0](https://github.com/tailscale/github-action/releases/tag/v4.4.0) | 2026-10-29 |
 | [erlef/setup-beam](https://github.com/erlef/setup-beam/releases/tag/v1.24.1) | **v1** | [v1.24.1](https://github.com/erlef/setup-beam/releases/tag/v1.24.1) | 2026-06-28 |
 | [bufbuild/buf-setup-action](https://github.com/bufbuild/buf-setup-action/releases/tag/v1.50.0) | **v1** | [v1.50.0](https://github.com/bufbuild/buf-setup-action/releases/tag/v1.50.0) | 2025-01-17 |
 | [bufbuild/buf-action](https://github.com/bufbuild/buf-action/releases/tag/v1.7.0) | **v1** | [v1.7.0](https://github.com/bufbuild/buf-action/releases/tag/v1.7.0) | 2026-11-03 |
-| [astral-sh/setup-uv](https://github.com/astral-sh/setup-uv/releases/tag/v10.3.3) | **v10** | [v10.3.3](https://github.com/astral-sh/setup-uv/releases/tag/v10.3.3) | 2026-10-28 |
+| [astral-sh/setup-uv](https://github.com/astral-sh/setup-uv/releases/tag/v10.4.0) | **v10** | [v10.4.0](https://github.com/astral-sh/setup-uv/releases/tag/v10.4.0) | 2026-11-20 |
 | [aquasecurity/setup-trivy](https://github.com/aquasecurity/setup-trivy/releases/tag/v0.3.1) | **v0** | [v0.3.1](https://github.com/aquasecurity/setup-trivy/releases/tag/v0.3.1) | 2026-06-03 |
 | [mcr.microsoft.com/playwright](#) | **—** | [Error](#) | — |
 | [anthropics/claude-code-action](https://github.com/anthropics/claude-code-action/releases/tag/v1) | **v1** | [v1](https://github.com/anthropics/claude-code-action/releases/tag/v1) | 2025-08-26 |
@@ -50,7 +50,7 @@ Track the latest versions of github actions, helm charts, terraform providers, a
 
 | Dependency | Major | Latest | Released |
 |---|---:|---:|---:|
-| [argo-cd](https://argoproj.github.io/argo-helm) | **10** | [10.18.1](https://argoproj.github.io/argo-helm) | 2026-11-18 |
+| [argo-cd](https://argoproj.github.io/argo-helm) | **10** | [10.18.2](https://argoproj.github.io/argo-helm) | 2026-11-19 |
 | [external-secrets](https://charts.external-secrets.io) | **2** | [2.15.0](https://charts.external-secrets.io) | 2026-11-10 |
 
 ## Terraform Providers
