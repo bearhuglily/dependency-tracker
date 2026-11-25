@@ -44,13 +44,13 @@ Track the latest versions of github actions, helm charts, terraform providers, a
 | [devhub-tools/querydesk-remove-action](https://github.com/devhub-tools/querydesk-remove-action/releases/tag/v1) | **v1** | [v1](https://github.com/devhub-tools/querydesk-remove-action/releases/tag/v1) | 2024-11-05 |
 | [oven-sh/setup-bun](https://github.com/oven-sh/setup-bun/releases/tag/v2.2.0) | **v2** | [v2.2.0](https://github.com/oven-sh/setup-bun/releases/tag/v2.2.0) | 2026-03-14 |
 | [arduino/setup-task](https://github.com/arduino/setup-task/releases/tag/v3.0.0) | **v3** | [v3.0.0](https://github.com/arduino/setup-task/releases/tag/v3.0.0) | 2026-06-30 |
-| [sigstore/cosign-installer](https://github.com/sigstore/cosign-installer/releases/tag/v4.1.3) | **v4** | [v4.1.3](https://github.com/sigstore/cosign-installer/releases/tag/v4.1.3) | 2026-11-04 |
+| [sigstore/cosign-installer](https://github.com/sigstore/cosign-installer/releases/tag/v4.1.4) | **v4** | [v4.1.4](https://github.com/sigstore/cosign-installer/releases/tag/v4.1.4) | 2026-11-24 |
 
 ## Helm Charts
 
 | Dependency | Major | Latest | Released |
 |---|---:|---:|---:|
-| [argo-cd](https://argoproj.github.io/argo-helm) | **10** | [10.18.3](https://argoproj.github.io/argo-helm) | 2026-11-23 |
+| [argo-cd](https://argoproj.github.io/argo-helm) | **10** | [10.19.1](https://argoproj.github.io/argo-helm) | 2026-11-24 |
 | [external-secrets](https://charts.external-secrets.io) | **2** | [2.15.0](https://charts.external-secrets.io) | 2026-11-10 |
 
 ## Terraform Providers
